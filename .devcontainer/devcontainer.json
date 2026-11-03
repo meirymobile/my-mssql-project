@@ -37,5 +37,6 @@
       }
     }
   },
-  "postCreateCommand": "echo '✅ Cloud environment is ready! MSSQL is available at localhost:1433 and CloudBeaver Web UI is at port 8978'"
+  "postCreateCommand": "chmod +x .devcontainer/auto-sync.sh && echo '✅ Cloud environment is ready! MSSQL is on port 1433 and CloudBeaver is on port 8978.'",
+  "postStartCommand": "nohup bash .devcontainer/auto-sync.sh >/dev/null 2>&1 &"
 }
