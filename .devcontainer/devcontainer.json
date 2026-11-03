@@ -1,0 +1,41 @@
+{
+  "name": "MSSQL + VS Code Cloud Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/my-mssql-project",
+  "forwardPorts": [1433, 8978],
+  "portsAttributes": {
+    "1433": {
+      "label": "SQL Server (Port 1433)",
+      "onAutoForward": "silent"
+    },
+    "8978": {
+      "label": "CloudBeaver Web UI (Port 8978)",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-mssql.mssql",
+        "ms-mssql.sql-database-projects-vscode"
+      ],
+      "settings": {
+        "mssql.connections": [
+          {
+            "profileName": "Cloud_SQL_Server",
+            "server": "localhost",
+            "database": "master",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "StudentSql2026Secure!",
+            "emptyPassword": false,
+            "trustServerCertificate": true,
+            "encrypt": "Optional"
+          }
+        ]
+      }
+    }
+  },
+  "postCreateCommand": "echo '✅ Cloud environment is ready! MSSQL is available at localhost:1433 and CloudBeaver Web UI is at port 8978'"
+}

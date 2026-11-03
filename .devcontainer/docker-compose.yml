@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql-db
+    restart: unless-stopped
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "StudentSql2026Secure!"
+    ports:
+      - "1433:1433"
+      - "8978:8978"
+    volumes:
+      - mssql-data:/var/opt/mssql
+
+  app:
+    image: mcr.microsoft.com/devcontainers/universal:linux
+    volumes:
+      - ..:/workspaces/my-mssql-project:cached
+    network_mode: service:db
+    command: sleep infinity
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: cloudbeaver
+    restart: unless-stopped
+    network_mode: service:db
+    volumes:
+      - cloudbeaver-data:/opt/cloudbeaver/workspace
+
+volumes:
+  mssql-data:
+  cloudbeaver-data:
