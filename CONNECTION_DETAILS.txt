@@ -1,0 +1,21 @@
+=================================================================
+🔑 פרטי התחברות לשרת SQL Server (CONNECTION DETAILS)
+=================================================================
+
+Server / Host (שרת):          localhost   (או: db)
+Port (פורט):                  1433
+User name (שם משתמש):         sa
+Password (סיסמה):             StudentSql2026Secure!
+Database (מסד נתונים):        master
+Authentication Type:          SQL Login / SQL Server Authentication
+Trust Server Certificate:     True (סמן ב-V)
+Encrypt:                      Optional (או False)
+
+=================================================================
+🌐 ממשק אינטרנטי גרפי (CloudBeaver Web UI):
+=================================================================
+פורט:                         8978
+קישור:                        בלשונית PORTS למטה לחץ על פורט 8978
+סוג מסד נתונים לבחירה:        Microsoft SQL Server
+הזן את אותם נתוני התחברות שלמעלה (Host: localhost, Port: 1433).
+=================================================================
