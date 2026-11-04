@@ -21,6 +21,7 @@
         "ms-mssql.sql-database-projects-vscode"
       ],
       "settings": {
+        "workbench.colorTheme": "Default Dark+",
         "mssql.connections": [
           {
             "profileName": "Cloud_SQL_Server",
@@ -29,6 +30,7 @@
             "authenticationType": "SqlLogin",
             "user": "sa",
             "password": "StudentSql2026Secure!",
+            "savePassword": true,
             "emptyPassword": false,
             "trustServerCertificate": true,
             "encrypt": "Optional"
