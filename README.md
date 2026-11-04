@@ -7,8 +7,16 @@
 
 ## ⚡ הפעלה מהירה (בכל מכשיר / דפדפן / iPad)
 
-לחצו על הכפתור לפתיחת מכונה וירטואלית מוכנה תוך 2 דקות:
+### אופציה א' (מומלץ לסטודנטים) – יצירת עותק אישי בחשבון שלכם:
+1. לחצו על הכפתור הירוק למעלה: **`Use this template`** > **`Create a new repository`**  
+   *(או גשו ישירות לקישור: **[יצירת פרויקט אישי מהתבנית](https://github.com/meirymobile/my-mssql-project/generate)**)*.
+2. תנו שם לפרויקט שלכם (למשל: `my-sql-course`) ולחצו על **Create repository**.
+3. במאגר החדש שנוצר אצלכם, לחצו על **`< > Code`** > לשונית **Codespaces** > **Create codespace on main**.
+   * כעת יש לכם שרת SQL פרטי ומאגר עצמאי שבו כל העבודה והשאילתות שלכם נשמרות בחשבון שלכם!
 
+---
+
+### אופציה ב' – פתיחת סביבה מיידית ישירות מכאן:
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/meirymobile/my-mssql-project)
 
 *(או בגיטהאב: לחצו על הכפתור הירוק **`< > Code`** > לשונית **Codespaces** > **Create codespace on main**)*.
