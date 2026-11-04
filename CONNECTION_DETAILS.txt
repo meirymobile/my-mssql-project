@@ -17,5 +17,14 @@ Encrypt:                      Optional (או False)
 פורט:                         8978
 קישור:                        בלשונית PORTS למטה לחץ על פורט 8978
 סוג מסד נתונים לבחירה:        Microsoft SQL Server
-הזן את אותם נתוני התחברות שלמעלה (Host: localhost, Port: 1433).
+
+פרטי חיבור ל-SQL בתוך Beaver:
+- Host (שרת):                 localhost   (או: db)
+- Port (פורט):                 1433
+- User (שם משתמש דיפולטיבי):  sa
+- Password (סיסמה):           StudentSql2026Secure!
+
+(אם נדרשת התחברות לאתר עצמו):
+- Admin User:                 cbadmin   (או: admin)
+- Admin Password:             StudentSql2026Secure!
 =================================================================
