@@ -25,6 +25,7 @@
         "mssql.connections": [
           {
             "profileName": "Cloud_SQL_Server",
+            "connectionString": "Server=localhost,1433;Database=master;User Id=sa;Password=StudentSql2026Secure!;TrustServerCertificate=True;",
             "server": "localhost",
             "database": "master",
             "authenticationType": "SqlLogin",
